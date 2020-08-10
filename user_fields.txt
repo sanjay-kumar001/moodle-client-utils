@@ -1,0 +1,52 @@
+list of user fields
+===================
+
+id int   //ID of the user
+username string  Optional //Username policy is defined in Moodle security config.
+auth string  Optional //Auth plugins include manual, ldap, etc
+suspended int  Optional //Suspend user account, either false to enable user login or true to disable it
+password string  Optional //Plain text password consisting of any characters
+firstname string  Optional //The first name(s) of the user
+lastname string  Optional //The family name of the user
+email string  Optional //A valid and unique email address
+maildisplay int  Optional //Email display
+city string  Optional //Home city of the user
+country string  Optional //Home country code of the user, such as AU or CZ
+timezone string  Optional //Timezone code such as Australia/Perth, or 99 for default
+description string  Optional //User profile description, no HTML
+userpicture int  Optional //The itemid where the new user picture has been uploaded to, 0 to delete
+firstnamephonetic string  Optional //The first name(s) phonetically of the user
+lastnamephonetic string  Optional //The family name phonetically of the user
+middlename string  Optional //The middle name of the user
+alternatename string  Optional //The alternate name of the user
+interests string  Optional //User interests (separated by commas)
+url string  Optional //User web page
+icq string  Optional //ICQ number
+skype string  Optional //Skype ID
+aim string  Optional //AIM ID
+yahoo string  Optional //Yahoo ID
+msn string  Optional //MSN ID
+idnumber string  Optional //An arbitrary ID code number perhaps from the institution
+institution string  Optional //Institution
+department string  Optional //Department
+phone1 string  Optional //Phone
+phone2 string  Optional //Mobile phone
+address string  Optional //Postal address
+lang string  Optional //Language code such as "en", must exist on server
+calendartype string  Optional //Calendar type such as "gregorian", must exist on server
+theme string  Optional //Theme name such as "standard", must exist on server
+mailformat int  Optional //Mail format code is 0 for plain text, 1 for HTML etc
+customfields  Optional //User custom fields (also known as user profil fields)
+list of ( 
+object {
+type string   //The name of the custom field
+value string   //The value of the custom field
+} 
+)
+preferences  Optional //User preferences
+list of ( 
+object {
+type string   //The name of the preference
+value string   //The value of the preference
+} 
+)
