@@ -43,6 +43,7 @@
 - core_user_delete_users
 - core_user_update_users
 - core_user_get_users
+- core_user_get_users_by_field
 
 - core_role_assign_roles 
 	
