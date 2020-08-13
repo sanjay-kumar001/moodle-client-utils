@@ -89,13 +89,13 @@ function create_calendar_events($events){
 	
 function get_moodle_data($ws_function, $param){
 	$config = include('Config.php');
-	$MoodleRest = new MoodleRest($config->server.'/webservice/rest/server.php', $config->token);
+	$MoodleRest = new MoodleRest($config->server_address, $config->token);
 	return $MoodleRest->request($ws_function, $param, MoodleRest::METHOD_GET);
 }
 
 function push_data_to_moodle($ws_function, $param){
 	$config = include('Config.php');
-	$MoodleRest = new MoodleRest($config->server.'/webservice/rest/server.php', $config->token);
+	$MoodleRest = new MoodleRest($config->server_address, $config->token);
 	return $MoodleRest->request($ws_function, $param, MoodleRest::METHOD_POST);
 }
 
